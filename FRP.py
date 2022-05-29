@@ -2265,7 +2265,7 @@ def apubuy ():
 		dec =(tok)
 		if len(dec) < 50:
 		    not_reg()
-		r = requests.get("https://pastebin.com/raw/8PThGLRt").text
+		r = requests.get("https://pastebin.com/raw/6buB8438").text
 		if dec in r:
 		    Main()	 #ad
 		else:
@@ -2284,7 +2284,7 @@ def apubuy ():
 
 def not_reg():
     print('\n\n\nVerify your Token\n\n\n')
-    string_Token_token = 'abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    string_Token_token = '123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     v_Token_token = ''.join((random.choice(string_Token_token)) for x in range(50))
     v_Token_token_save = open('/sdcard/apuvai.txt', 'w')
     v_Token_token_save.write((v_Token_token))
